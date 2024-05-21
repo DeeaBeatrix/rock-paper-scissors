@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  font-family: "Comic Neue", cursive;
+  background-color: var(--pink);
+  font-weight: 900;
+}
+
+:root {
+  --pink: #FF797F;
+  --purple: #A530CC;
+  --yellow: #FAE244;
+  --green: #3EEC64;
+  --orange: #EC753E;
+}

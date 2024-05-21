@@ -1,0 +1,85 @@
+.game-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.images-container {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+}
+
+.images {
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+}
+
+.images:hover {
+  transform: scale(1.2);
+}
+
+.selected {
+  transform: scale(1.2);
+  border: 2px solid #000;
+}
+
+.winner-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 32px;
+}
+
+.button-winner {
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100px;
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+}
+
+.button-winner:hover {
+  background-color: var(--orange);
+  box-shadow: 0px 0px 30px 0px var(--orange);
+  /* transform: rotate(360deg);
+  transition: all 0.7s ease-in-out 0s; */
+}
+
+.winner-text {
+  text-align: center;
+  color: var(--purple);
+  font-size: 32px;
+  display: none;
+  transform: rotate(360deg);
+  transition: all 0.7s ease-in-out 0s;
+}
+
+.player-one-text {
+  text-align: center;
+  color: var(--green);
+}
+
+.player-two-text {
+  text-align: center;
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 375px) {
+  .images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .images-container {
+    display: flex;
+  }
+}
